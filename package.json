@@ -1,5 +1,5 @@
 {
-    "name": "@kenji200056/youtube-mcp",
+    "name": "youtube-mcp",
     "version": "0.1.0",
     "description": "MCPサーバーとして、YouTube動画の字幕を取得できるツールです。",
     "license": "MIT",
