@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",                   // 最新構文を使用したい場合
+    "module": "ESNext",                   // Claude対応含め柔軟性が高い
+    "moduleResolution": "node",          // 一般的に安定
+    "outDir": "dist",
+    "rootDir": "src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true            // JSON読み込みも対応させたいなら
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
