@@ -1,41 +1,40 @@
 {
     "name": "youtube-mcp",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "MCPサーバーとして、YouTube動画の字幕を取得できるツールです。",
     "license": "MIT",
     "author": "Kenji Gutierrez Jimenez",
     "homepage": "https://github.com/kenji200056/youtube_mcp",
     "bugs": {
-      "url": "https://github.com/kenji200056/youtube_mcp/issues"
+        "url": "https://github.com/kenji200056/youtube_mcp/issues"
     },
     "repository": {
-      "type": "git",
-      "url": "https://github.com/kenji200056/youtube_mcp.git"
+        "type": "git",
+        "url": "https://github.com/kenji200056/youtube_mcp.git"
     },
     "type": "module",
     "access": "public",
     "main": "dist/index.js",
     "module": "dist/index.js",
     "bin": {
-      "youtube-mcp": "dist/index.js"
+        "youtube-mcp": "dist/index.js"
     },
     "files": [
-      "dist"
+        "dist"
     ],
     "scripts": {
-      "build": "tsc && shx chmod +x dist/*.js",
-      "prepare": "npm run build",
-      "watch": "tsc --watch",
-      "start": "node dist/index.js"
+        "build": "tsc && shx chmod +x dist/*.js",
+        "prepare": "npm run build",
+        "watch": "tsc --watch",
+        "start": "node dist/index.js"
     },
     "dependencies": {
-      "@modelcontextprotocol/sdk": "0.6.0",
-      "youtube-captions-scraper": "^2.0.3"
+        "@modelcontextprotocol/sdk": "0.6.0",
+        "youtube-captions-scraper": "^2.0.3"
     },
     "devDependencies": {
-      "@types/node": "^20.11.24",
-      "shx": "^0.3.4",
-      "typescript": "^5.6.2"
+        "@types/node": "^20.11.24",
+        "shx": "^0.3.4",
+        "typescript": "^5.6.2"
     }
 }
-  
