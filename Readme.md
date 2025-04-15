@@ -1,26 +1,26 @@
-# YouTube_MCP
+# youtube-mcp
 
-`YouTube_MCP` は、YouTube動画の字幕（トランスクリプト）を取得する Model Context Protocol（MCP）対応のツールサーバーです。Claude などのMCP対応モデルから呼び出すことで、URLまたは動画IDを入力するだけで字幕を取得することができます。
-
----
-
-## 📦 機能概要
-
-- ✅ YouTubeのURLまたは動画IDから字幕を取得
-- ✅ 指定言語（例: en, ja, ko）の字幕に対応
-- ✅ Claude等のLLMからの呼び出しに対応（MCPプロトコル準拠）
+YouTubeの動画から字幕を取得できる、Claude対応のMCPツールです。  
+URLと字幕の言語を渡すだけで、字幕を自動取得し、ClaudeなどのAIでそのまま要約や分析に使うことができます。
 
 ---
 
-## 🚀 使い方（ローカル実行）
+## ✨ 概要
 
-```bash
-# 依存関係のインストール
-npm install
+- YouTubeのURLまたは動画IDを渡すと、字幕を取得して返します。
+- ClaudeなどのMCP対応AIツールから呼び出すことを想定しています。
+- `npx` でそのまま実行可能。**ローカルでのnpm installなどの操作は不要です。**
 
-# TypeScriptビルド
-npm run build
+---
 
-# サーバー起動（標準入力・出力で起動）
-npm start
+## 🚀 使用方法
 
+### 1. `.mcp/tools.json` に以下を追記（初回のみ）
+
+```json
+{
+  "youtube-mcp": {
+    "command": "npx",
+    "args": ["-y", "youtube-mcp"]
+  }
+}
